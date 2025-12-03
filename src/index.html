@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nyoman Wikananda Santana</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../dist/style.css">
+
+    <!-- Script -->
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body class="font-['Poppins'] py-4 px-10 xl:px-[200px] md:px-[80px] selection:bg-primary-900 selection:text-white">
+    <header class="w-full flex justify-between items-center relative z-50">
+        <a href="#" id="nav-logo"
+            class="text-2xl font-bold uppercase text-primary-900 transition-colors duration-500">WIKANANDA.</a>
+
+        <button id="nav-icon2"
+            class="relative w-12 h-10 text-primary-900 transition-colors duration-500 [--bar-spacing:14px]"
+            aria-label="Open menu">
+            <!-- Burger Button -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div id="menu-overlay"
+        class="fixed inset-0 bg-primary-900 z-40 flex flex-col justify-center items-center transition-transform duration-500 translate-x-full">
+        <nav class="flex flex-col items-center gap-10">
+            <a href="#"
+                class="menu-link text-xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">Home</a>
+            <a href="#"
+                class="menu-link text-xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">About</a>
+            <a href="#"
+                class="menu-link text-xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">Projects</a>
+            <a href="#"
+                class="menu-link text-xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">Contact</a>
+        </nav>
+
+        <div class="absolute bottom-10 text-sm text-primary-400 uppercase tracking-widest">
+            &copy; 2025 Nyoman Wikananda Santana
+        </div>
+    </div>
+
+    <!-- Main Page -->
+    <main class="min-h-screen flex flex-col justify-center items-center gap-24">
+        <div class="flex flex-col items-center gap-2">
+            <h1 class="text-xl md:text-4xl xl:text-6xl text-center font-bold text-primary-900">Nyoman Wikananda Santana
+            </h1>
+            <h1 class="text-xl md:text-4xl xl:text-6xl font-bold text-primary-400">AI Developer</h1>
+        </div>
+        <a href="mailto:nandasantana276@gmail.com" class="inline-flex items-center 
+            justify-center rounded-full border-2 border-primary-900
+            bg-primary-900 text-xl text-white
+            font-medium px-10 py-5 shadow-primary-900
+            hover:bg-white hover:text-primary-900 
+            transition-colors duration-100">Contact
+            me</a>
+    </main>
+
+</body>
+
+</html>
