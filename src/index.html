@@ -18,6 +18,7 @@
 
     <!-- Script -->
     <script src="./script.js" defer></script>
+    <script src="./components.js" defer></script>
 
 </head>
 
@@ -26,10 +27,10 @@
         <a href="#" id="nav-logo"
             class="text-2xl font-bold uppercase text-primary-900 transition-colors duration-500">WIKANANDA.</a>
 
+        <!-- Burger Button -->
         <button id="nav-icon2"
             class="relative w-12 h-10 text-primary-900 transition-colors duration-500 [--bar-spacing:14px]"
             aria-label="Open menu">
-            <!-- Burger Button -->
             <span></span>
             <span></span>
             <span></span>
@@ -72,6 +73,31 @@
             hover:bg-white hover:text-primary-900 
             transition-colors duration-100">Contact
             me</a>
+    </main>
+
+    <main class="min-h-screen flex flex-col justify-center items-center gap-24">
+        <div class="mt-48 mb-48">
+            <h1 class="text-xl md:text-3xl xl:text-5xl text-center font-bold text-primary-900">Case Study</h1>
+        </div>
+        <div class="flex flex-col justify-center items-start gap-8">
+            <h3 class="text-lg md:text-xl xl:text-2xl font-bold text-primary-900">Data Science & AI</h3>
+            <ai-card title="Image Classification (CNN vs TIMMs)"
+                description="Comparing classical CNN vs pretrained TIMM (ResNet, Swiftformer, etc.) in image classification."
+                git-link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
+            </ai-card>
+            <ai-card title="Virtual Makeup Try-On Application with GAN Based Network"
+                description="Partial makeup transfer by template implementing SSAT++ and FastAPI as servers."
+                git-link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
+            </ai-card>
+            <ai-card title="Topic Modeling Based on LDA and BERT"
+                description="Topic modeling with LDA and BERTopic with clustering using K-Means and HDBSCAN on e-commerce woman’s clothing review dataset."
+                git-link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
+            </ai-card>
+            <ai-card title="Store Sales Forecasting — Ensemble Gradient Boosting"
+                description="Forecasting daily store sales using ensemble gradient boosting models (XGBoost + LightGBM) on multi-year retail data."
+                git-link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
+            </ai-card>
+        </div>
     </main>
 
 </body>
