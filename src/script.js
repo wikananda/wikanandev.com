@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // open menu
     if (menuOverlay) {
       menuOverlay.classList.toggle("translate-x-full");
+      document.body.classList.toggle("overflow-hidden");
     }
   });
 
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (menuOverlay) {
         menuOverlay.classList.toggle("translate-x-full");
+        document.body.classList.remove("overflow-hidden");
       }
     })
   })
