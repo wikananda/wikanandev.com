@@ -25,11 +25,11 @@
 <body class="font-['Poppins'] py-4 px-10 xl:px-[200px] md:px-[80px] selection:bg-primary-900 selection:text-white">
     <header class="w-full flex justify-between items-center relative z-50">
         <a href="#" id="nav-logo"
-            class="text-2xl font-bold uppercase text-primary-900 transition-colors duration-500">WIKANANDA.</a>
+            class="text-lg md:text-xl xl:text-2xl font-bold uppercase text-primary-900 transition-colors duration-500">WIKANANDA.</a>
 
         <!-- Burger Button -->
         <button id="nav-icon2"
-            class="relative w-12 h-10 text-primary-900 transition-colors duration-500 [--bar-spacing:14px]"
+            class="relative w-11 h-9 md:w-12 md:h-10 text-primary-900 transition-colors duration-500 [--bar-height:3px] md:[--bar-height:4px] [--bar-spacing:14px]"
             aria-label="Open menu">
             <span></span>
             <span></span>
@@ -45,16 +45,16 @@
         class="fixed inset-0 bg-primary-900 z-40 flex flex-col justify-center items-center transition-transform duration-500 translate-x-full">
         <nav class="flex flex-col items-center gap-10">
             <a href="#"
-                class="menu-link text-xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">Projects</a>
+                class="menu-link text-2xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">Projects</a>
             <a href="#"
-                class="menu-link text-xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">About</a>
+                class="menu-link text-2xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">About</a>
             <a href="https://drive.google.com/file/d/1PDiXc6aaLOuUVC30Qh0plwimiEx2Dnnf/view?usp=sharing" target="_blank"
-                class="menu-link text-xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">Resume</a>
-            <a href="#"
-                class="menu-link text-xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">Contact</a>
+                class="menu-link text-2xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">Resume</a>
+            <a href="mailto:nandasantana276@gmail.com"
+                class="menu-link text-2xl md:text-4xl xl:text-6xl font-bold uppercase text-primary-400 hover:text-white transition-colors">Contact</a>
         </nav>
 
-        <div class="absolute bottom-10 text-sm text-primary-400 uppercase tracking-widest">
+        <div class="absolute bottom-10 text-xs md:text-sm text-primary-400 uppercase tracking-widest text-center">
             &copy; 2025 Nyoman Wikananda Santana
         </div>
     </div>
@@ -68,36 +68,50 @@
         </div>
         <a href="mailto:nandasantana276@gmail.com" class="inline-flex items-center 
             justify-center rounded-full border-2 border-primary-900
-            bg-primary-900 text-xl text-white
-            font-medium px-10 py-5 shadow-primary-900
+            bg-primary-900 text-md md:text-lg xl:text-xl text-white
+            font-medium px-6 py-3 md:px-8 md:py-4 xl:px-10 xl:py-5 shadow-primary-900
             hover:bg-white hover:text-primary-900 
             transition-colors duration-100">Contact
             me</a>
     </main>
 
-    <main class="min-h-screen flex flex-col justify-center items-center gap-24">
+    <main class="min-h-screen flex flex-col justify-center items-center gap-28">
         <div class="mt-48 mb-48">
             <h1 class="text-xl md:text-3xl xl:text-5xl text-center font-bold text-primary-900">Case Study</h1>
         </div>
+
         <div class="flex flex-col justify-center items-start gap-8">
             <h3 class="text-lg md:text-xl xl:text-2xl font-bold text-primary-900">Data Science & AI</h3>
-            <ai-card title="Image Classification (CNN vs TIMMs)"
+            <project-card-no-image title="Image Classification (CNN vs TIMMs)"
                 description="Comparing classical CNN vs pretrained TIMM (ResNet, Swiftformer, etc.) in image classification."
-                git-link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
-            </ai-card>
-            <ai-card title="Virtual Makeup Try-On Application with GAN Based Network"
+                btn-title="View git" link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
+            </project-card-no-image>
+            <project-card-no-image title="Virtual Makeup Try-On Application with GAN Based Network"
                 description="Partial makeup transfer by template implementing SSAT++ and FastAPI as servers."
-                git-link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
-            </ai-card>
-            <ai-card title="Topic Modeling Based on LDA and BERT"
+                btn-title="View git" link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
+            </project-card-no-image>
+            <project-card-no-image title="Topic Modeling Based on LDA and BERT"
                 description="Topic modeling with LDA and BERTopic with clustering using K-Means and HDBSCAN on e-commerce woman’s clothing review dataset."
-                git-link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
-            </ai-card>
-            <ai-card title="Store Sales Forecasting — Ensemble Gradient Boosting"
+                btn-title="View git" link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
+            </project-card-no-image>
+            <project-card-no-image title="Store Sales Forecasting — Ensemble Gradient Boosting"
                 description="Forecasting daily store sales using ensemble gradient boosting models (XGBoost + LightGBM) on multi-year retail data."
-                git-link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
-            </ai-card>
+                btn-title="View git" link="https://github.com/wikananda/Image-Classification-CNN-vs-TIMMs">
+            </project-card-no-image>
         </div>
+
+        <div class="flex flex-col justify-center items-start gap-8">
+            <h3 class="text-lg md:text-xl xl:text-2xl font-bold text-primary-900">Product Design</h3>
+            <project-card title="WAIS"
+                description="An app that facilitates brainstorming and simplifying discussion by providing structured color-based session."
+                image-src="./resources/wais-picture.png" link="#">
+            </project-card>
+            <project-card title="Compast"
+                description="Composting assistant that makes composting simpler by providing clear steps, to-do list and reminder based on waste mix, temperature, and moisture."
+                image-src="./resources/compast-picture.png" link="#">
+            </project-card>
+        </div>
+
     </main>
 
 </body>
