@@ -7,19 +7,19 @@ class ProjectCardNoImage extends HTMLElement {
         const link = this.getAttribute("link") || "#";
 
         this.innerHTML = `
-         <div class="w-full rounded-3xl bg-white shadow-custom
+         <div class="w-full mx-auto rounded-3xl bg-white shadow-custom max-w-[350px] lg:max-w-full
         flex flex-col justify-center items-center text-center h-auto py-10 gap-6 px-10
-        xl:flex-row xl:items-center xl:text-left xl:h-[175px] 2xl:h-[350px] xl:py-0 xl:gap-0 2xl:gap-6 xl:px-10 2xl:px-20">
+        lg:flex-row lg:items-center lg:text-left lg:h-[175px] 2xl:h-[350px] lg:py-0 lg:gap-0 lg:px-10 2xl:gap-6 2xl:px-20">
             <!-- Title -->
-            <div class="w-full xl:w-[150px] 2xl:w-[300px] mx-auto xl:mx-0 shrink-0 text-center">
-                <h3 class="text-md font-bold md:text-base xl:text-base 2xl:text-3xl text-primary-900">${title}</h3>
+            <div class="w-full lg:w-[150px] 2xl:w-[300px] mx-auto lg:mx-0 shrink-0 text-center">
+                <h3 class="text-md font-bold md:text-base lg:text-base 2xl:text-3xl text-primary-900">${title}</h3>
             </div>
 
             <!-- Divider -->
-            <div class="hidden xl:block w-[2px] h-36 2xl:h-72 rounded-full bg-primary-400 mx-10"></div>
+            <div class="hidden lg:block w-[2px] h-36 2xl:h-72 rounded-full bg-primary-400 mx-10"></div>
 
             <!-- Description -->
-            <div class="text-center xl:text-left xl:flex-1 w-full xl:pr-10 2xl:pr-20">
+            <div class="text-center lg:text-left lg:flex-1 w-full lg:pr-10 2xl:pr-20">
                 <p class="text-sm 2xl:text-2xl  text-primary-900">${description}</p>
             </div>
 
@@ -57,22 +57,22 @@ class ProjectCard extends HTMLElement {
         const imageSrc = this.getAttribute("image-src") || "";
 
         this.innerHTML = `
-         <div class="w-full rounded-3xl bg-white shadow-custom
-        flex flex-col h-auto overflow-hidden
-        xl:flex-row xl:h-[175px] 2xl:h-[350px] xl:gap-6 xl:pr-12 2xl:pr-24">
+         <div class="w-full mx-auto rounded-3xl bg-white shadow-custom
+        flex flex-col h-auto overflow-hidden max-w-[350px] lg:max-w-full
+        lg:flex-row lg:h-[175px] 2xl:h-[350px] lg:gap-6 lg:pr-12 2xl:pr-24">
                 <!-- Image -->
-                <div class="w-full h-[220px] xl:w-[240px] 2xl:w-[480px] xl:h-full shrink-0">
+                <div class="w-full h-[220px] lg:w-[240px] 2xl:w-[480px] lg:h-full shrink-0">
                     <img src="${imageSrc}" alt="Compast Picture"
                         class="w-full h-full object-cover rounded-3xl">
                 </div>
 
                 <!-- Content Wrapper -->
                 <div class="flex flex-col justify-center items-center text-center gap-6 p-10 w-full
-                xl:flex-row xl:items-center xl:text-left xl:p-0 xl:pl-8 xl:gap-8 xl:h-full">
+                lg:flex-row lg:items-center lg:text-left lg:p-0 lg:pl-8 lg:gap-8 lg:h-full">
 
                     <!-- Title + Description -->
-                    <div class="flex flex-col justify-center items-center xl:items-start gap-2 2xl:gap-4 xl:flex-1 xl:pr-10 2xl:pr-20">
-                        <h3 class="text-base font-bold md:text-lg xl:text-lg 2xl:text-4xl text-primary-900">${title}</h3>
+                    <div class="flex flex-col justify-center items-center lg:items-start gap-2 2xl:gap-4 lg:flex-1 lg:pr-10 2xl:pr-20">
+                        <h3 class="text-base font-bold md:text-lg lg:text-lg 2xl:text-4xl text-primary-900">${title}</h3>
                         <p class="text-xs md:text-sm 2xl:text-2xl font-light text-primary-900">${description}</p>
                     </div>
 
