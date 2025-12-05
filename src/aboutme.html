@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nyoman Wikananda Santana</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../dist/style.css">
+
+    <!-- Script -->
+    <script src="./script.js" defer></script>
+    <script src="./components.js" defer></script>
+
+</head>
+
+<body class="font-['Poppins'] selection:bg-primary-900 selection:text-white">
+    <div class="w-full px-10 xl:px-[200px] 2xl:py-14 2xl:px-[400px] md:px-[80px]">
+        <div class="relative min-h-[110vh] flex flex-col">
+            <custom-header></custom-header>
+            <div class="flex-1 flex flex-row items-center gap-16">
+                <div class="w-1/2 flex flex-col items-start gap-8 mb-16">
+                    <h1 class="text-2xl md:text-4xl xl:text-6xl font-light">Hello,<br>
+                        I'm <span class="font-bold text-primary-400">Wikan.</span>
+                    </h1>
+                    <p class="text-xs md:text-md xl:text-lg 2xl:text-2xl font-light text-primary-900">
+                        Mathematics graduate with passion in technology, AI and video game. Dreaming to be a Data
+                        Scientist
+                        and AI Engineer. Love to create and innovate solutions for problems.
+                    </p>
+                </div>
+            </div>
+            <img src="../resources/photo.png" alt="photo-me"
+                class="absolute top-0 right-0 w-2/5 h-full object-cover -z-10 rounded-b-[20px]">
+
+            <div class="w-full flex flex-row justify-start items-center gap-24 mb-24">
+                <p class="text-xs md:text-md xl:text-lg 2xl:text-2xl font-medium text-primary-900"><span
+                        class="text-xs md:text-sm xl:text-md 2xl:text-xl font-light text-primary-400 pr-1">Based in
+                    </span> Bali, Indonesia</p>
+                <p class="text-xs md:text-md xl:text-lg 2xl:text-2xl font-medium text-primary-900"><span
+                        class="text-xs md:text-sm xl:text-md 2xl:text-xl font-light text-primary-400 pr-1">Role </span>
+                    AI
+                    Engineer, Data Science</p>
+            </div>
+        </div>
+        <menu-overlay></menu-overlay>
+    </div>
+    <custom-footer></custom-footer>
+</body>
+
+</html>

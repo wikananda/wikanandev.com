@@ -104,11 +104,11 @@ class ProjectCard extends HTMLElement {
 
 class CustomHeader extends HTMLElement {
     connectedCallback() {
-        const isAboutPage = window.location.pathname.includes("about.html");
+        const isAboutPage = window.location.pathname.includes("aboutme.html");
         const logoLink = isAboutPage ? "../index.html" : "#";
 
         this.innerHTML = `
-        <header class="w-full flex justify-between items-center relative z-50">
+        <header class="w-full py-7 flex justify-between items-center relative z-50">
             <a href="${logoLink}" id="nav-logo"
                 class="text-lg md:text-xl xl:text-2xl 2xl:text-5xl font-bold text-primary-900 transition-colors duration-500">Wikananda.</a>
 
@@ -182,9 +182,9 @@ class CustomFooter extends HTMLElement {
 
 class MenuOverlay extends HTMLElement {
     connectedCallback() {
-        const isAboutPage = window.location.pathname.includes("about.html");
+        const isAboutPage = window.location.pathname.includes("aboutme.html");
         const projectsLink = isAboutPage ? "../index.html#projects" : "#projects";
-        const aboutLink = isAboutPage ? "#" : "./src/about.html";
+        const aboutLink = isAboutPage ? "#" : "./src/aboutme.html";
 
         this.innerHTML = `
         <div id="menu-overlay"
