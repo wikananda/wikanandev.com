@@ -1,6 +1,7 @@
 // Toggle the hamburger open/close state
 document.addEventListener("DOMContentLoaded", () => {
   const navIcon = document.getElementById("nav-icon2");
+  const wikanandaLogo = document.getElementById("wikananda-logo");
   if (!navIcon) return;
 
   const menuOverlay = document.getElementById("menu-overlay");
@@ -25,6 +26,24 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.toggle("overflow-hidden");
     }
   });
+
+  if (navLogo) {
+    navLogo.addEventListener("click", () => {
+      if (navIcon.classList.contains("open")) {
+        navIcon.classList.remove("open");
+        navIcon.classList.toggle("text-primary-900");
+        navIcon.classList.toggle("text-primary-400");
+
+        navLogo.classList.toggle("text-primary-900");
+        navLogo.classList.toggle("text-primary-400");
+
+        if (menuOverlay) {
+          menuOverlay.classList.add("translate-x-full");
+          document.body.classList.remove("overflow-hidden");
+        }
+      }
+    });
+  }
 
   menuLinks.forEach(link => {
     link.addEventListener("click", () => {
